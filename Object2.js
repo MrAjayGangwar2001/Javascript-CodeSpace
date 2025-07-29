@@ -22,6 +22,8 @@ const user = {
   },
 };
 
+console.log(user);
+
 console.log(user.Address.User_Full_Add.vill);
 console.log(user.Address.User_Full_Add.city);
 
@@ -35,6 +37,7 @@ let obj2 = {
     5: "E",
     6: "F"
 }
+
 console.log(obj1[1]); // A
 let obj3 = Object.assign(obj1, obj2)
 let obj4 = Object.assign({}, obj1, obj2)
