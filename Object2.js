@@ -2,6 +2,7 @@
 // 1. singleton --------> in this singleton object create by constructer
 
 // let app = new Object();  // singleton object create by constructor
+
 let app = {}; // non-singleton object create by object literal
 
 app.id = "A101";
@@ -20,8 +21,6 @@ const user = {
     },
   },
 };
-
-
 
 console.log(user.Address.User_Full_Add.vill);
 console.log(user.Address.User_Full_Add.city);
@@ -74,10 +73,10 @@ console.log(user.hasOwnProperty('isLoggedOut'));
 
 
 
-// Ab Hum Sekhenge object ko DeStructure karna
+// Ab Hum Sekhenge object ko De-Structure karna
 
 const Course = {
-    CName : "Full Stack Development",
+    CName : "Java Full Stack Development",
     CPrice : 25000,
     CDuration : "6 Months",
     CInstructer : "Snehank"
