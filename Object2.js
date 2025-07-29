@@ -78,7 +78,7 @@ console.log(user.hasOwnProperty('isLoggedOut'));
 const Course = {
     CName : "Java Full Stack Development",
     CPrice : 25000,
-    CDuration : "6 Months",
+    CDuration : "6-7 Months",
     CInstructer : "Snehank"
 }
 console.log(Course);
@@ -86,4 +86,5 @@ console.log(Course);
 const {CName, CPrice, CDuration, CInstructer:Teacher} = Course;   // CInstructer : Teacher ---> Means we can rename the variable name acc. yourself
 console.log(CName);
 console.log(CPrice);
+console.log(CDuration);
 console.log(Teacher);
