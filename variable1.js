@@ -24,7 +24,9 @@ const c = 30;
     let a = 40;
     var b = 50;
     const c = 60;
-
+    console.log("a", a);
+    console.log("b", b);
+    console.log("c", c);
 }
 
 console.log(a);
