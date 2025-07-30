@@ -20,14 +20,23 @@
     <h2>DOM Manipulation Console Printing Project </h2>
     <button id="btn">Start</button>
     <button id="btnn">Stop</button>
+    <div class="consoleText">
+        <ul class="ulist">
+        </ul>
+    </div>
 
 </body>
 <script>
     let Start = document.getElementById("btn");
     let Stop = document.getElementById("btnn");
+    let consoleText = document.querySelector(".ulist");
     let interval;
     function Print(str) {
-        console.log(str, Date.now())
+       // consoleText.innerHTML += "\item " + str + ""+ Date.now();
+        let li = document.createElement("li");
+        li.textContent = str + " " + Date.now();
+        consoleText.appendChild(li);
+       // console.log(str, Date.now())
     }
     function start(){
         if(!interval){
