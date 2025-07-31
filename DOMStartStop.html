@@ -21,8 +21,8 @@
     <button id="btn">Start</button>
     <button id="btnn">Stop</button>
     <div class="consoleText">
-        <ul class="ulist">
-        </ul>
+        <ol class="ulist">
+        </ol>
     </div>
 
 </body>
@@ -34,7 +34,7 @@
     function Print(str) {
        // consoleText.innerHTML += "\item " + str + ""+ Date.now();
         let li = document.createElement("li");
-        li.textContent = str + " " + Date.now();
+        li.textContent = str + " " + new Date().toLocaleString();
         consoleText.appendChild(li);
        // console.log(str, Date.now())
     }
