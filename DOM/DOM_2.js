@@ -63,12 +63,14 @@ let rdc = arr.reduce((a, b)=>{
 console.log(rdc);
 
 // These are Some Events Method To Explore by self...
+
 // typeof, timestamp, defaultPreventDefault
 // target, toElement, srcElement, currentTarget
 // clientX, clientY, screenX, screenY
 // altkey, ctrlkey, shiftkey, keyCode
 
 //  Property/Method                   Type	                            Description
+
 //  typeof	                        Operator	                    Returns type of variable
 //  timeStamp                    	Event prop	                    Time when event was triggered
 //  preventDefault()                 Method	                        Prevents default action
