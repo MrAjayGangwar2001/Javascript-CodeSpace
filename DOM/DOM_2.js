@@ -83,6 +83,7 @@ console.log(rdc);
 //  altKey, ctrlKey, shiftKey       Event prop	                    true if modifier key was pressed
 //  keyCode                     	Event prop	                    Code of key pressed (deprecated)
 
+//  Here we will see when press the keyboard key then what will happen...
 image.addEventListener('click',(e)=>{
     console.log(e);
     console.log("This is Time Stamp Method",e.timeStamp);
