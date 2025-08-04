@@ -17,9 +17,9 @@
         setTimeout( name, 2000);
     
         let btntext = () => {
-            document.querySelector('p').
-            innerHTML = "To Stop The Change Click the Button."
-            document.style.color = "green"
+            document.querySelector('#para').
+            innerHTML = "The Text has been Changed.You Should Stop When the program Run."
+            document.style.color = "blue"
             
         }
     
@@ -29,7 +29,7 @@
     
         document.querySelector('#stop').addEventListener('click', (e)=>{
             clearTimeout(stop);
-            console.log("Stopped");
+          //  console.log("Stopped");
         } )
     </script>
 </body>
