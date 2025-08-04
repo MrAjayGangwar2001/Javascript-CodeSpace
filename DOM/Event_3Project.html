@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DOM Event Project</title>
+    <title>DOM Sync-Async Event Demo</title>
 </head>
 <body style="background-color: darkslategrey; color:aliceblue">
     <h2>Event Synchronous And Asynchronous</h2>
@@ -17,9 +17,9 @@
         setTimeout( name, 2000);
     
         let btntext = () => {
-            document.querySelector('#para').
-            innerHTML = "The Text has been Changed.You Should Stop When the program Run."
-            document.style.color = "blue"
+            let para = document.querySelector('p').
+            para.innerHTML = "The Text has been Changed.You Should Stop When the program Run."
+            para.style.color = "green"
             
         }
     
