@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Event Project</title>
+</head>
+<body style="background-color: darkslategrey; color:aliceblue">
+    <h2>Event Synchronous And Asynchronous</h2>
+    <p id="para">This is Tag for Button</p>
+    <button type="button" id="stop">Stop</button>
+    <script>
+        let name = () =>{
+            console.log("Hi, My Name is Ajay")
+            console.log("This is Set Time Out Method")
+        };
+        setTimeout( name, 2000);
+    
+        let btntext = () => {
+            document.querySelector('p').
+            innerHTML = "To Stop The Change Click the Button.";
+            document.style.color = "green"
+            
+        }
+    
+        //console.log(btntext);
+        let stop = setTimeout(btntext, 2000);
+        
+    
+        document.querySelector('#stop').addEventListener('click', (e)=>{
+            clearTimeout(stop);
+            console.log("Stopped");
+        } )
+    </script>
+</body>
+</html>
