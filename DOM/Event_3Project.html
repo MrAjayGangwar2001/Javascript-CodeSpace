@@ -7,7 +7,7 @@
 </head>
 <body style="background-color: darkslategrey; color:aliceblue">
     <h2>Event Synchronous And Asynchronous</h2>
-    <p id="para">This Text will be Change in 2 sec. To stop Click the Stop Button. </p>
+    <p id="para">This Text will be Change in Next 5 sec. To stop Click the Stop Button. </p>
     <button type="button" id="stop">Stop</button>
     <script>
         let name = () =>{
@@ -24,7 +24,7 @@
         }
     
         //console.log(btntext);
-        let stop = setTimeout(btntext, 2000);
+        let stop = setTimeout(btntext, 5000);
         
     
         document.querySelector('#stop').addEventListener('click', (e)=>{
