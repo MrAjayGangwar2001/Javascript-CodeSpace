@@ -5,13 +5,13 @@ function user(username){
     
 }
 
-function Details(username, age, gender){
+function Details(username, age, gender, work){
     user.call(this, username)
-
     this.age = age;
     this.gender = gender;
+    this.work = work;
 }
-let print = new Details("Ajay", 23, "Male");
+let print = new Details("Pirate Carabian", 23, "Male", "Thief");
 console.log(print);
 
 
