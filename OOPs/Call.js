@@ -1,0 +1,17 @@
+
+function user(username){
+    this.user = username;
+    console.log("Fun. User is called !");
+    
+}
+
+function Details(username, age, gender){
+    user.call(this, username)
+
+    this.age = age;
+    this.gender = gender;
+}
+let print = new Details("Ajay", 23, "Male");
+console.log(print);
+
+
