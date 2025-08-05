@@ -1,7 +1,7 @@
 
 function user(username){
     this.user = username;
-    console.log("Fun. User is called !");
+    console.log("This User Will be call by Another Function!");
     
 }
 
