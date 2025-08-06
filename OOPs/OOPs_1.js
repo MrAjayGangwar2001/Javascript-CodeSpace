@@ -7,11 +7,11 @@ let student1 = {
 
     Deatils : function(){
         console.log(`Name: ${this.name}, Age: ${this.age}, Login: ${this.isLogin}`);
-        console.log(this);
+       // console.log(this);
         
     }
 }
-console.log(student1);
+// console.log(student1);
 
 student1.Deatils();
 
@@ -37,8 +37,8 @@ let student3 = new Student("Ravi", 21, true);
 // this keyword inject inside of the constructor function.
 //  tha's why we can access the properties of the object using 'this' inside the constructor function.
 
-//  console.log(student2); // This will log undefined because the function does not return anything
-// console.log(student3); 
+ console.log(student2); // This will log undefined because the function does not return anything
+console.log(student3); 
 console.log(student3.constructor); 
 
 
