@@ -3,10 +3,10 @@
 let student1 = {
     name : "Ajay",
     age : 24,
-    isActive: true,
+    isLogin: true,
 
     Deatils : function(){
-        console.log(`Name: ${this.name}, Age: ${this.age}, Active: ${this.isActive}`);
+        console.log(`Name: ${this.name}, Age: ${this.age}, Login: ${this.isLogin}`);
         console.log(this);
         
     }
@@ -15,13 +15,13 @@ console.log(student1);
 
 student1.Deatils();
 
-function Student(name, age, isActive) {
+function Student(name, age, isLogin) {
     this.Name = name;
     this.Age = age;
-    this.IsActive = isActive;
+    this.IsLogin = isLogin;
 
     this.greet = function() {
-        console.log(`Hello, my name is ${this.Name}, I am ${this.Age} years old, and it is ${this.IsActive} that I am active.`);
+        console.log(`Hello, my name is ${this.Name}, I am ${this.Age} years old, and it is ${this.IsLogin} that I amsLogin.`);
     }
 
     return this; // This line is not necessary and will not work as expected
