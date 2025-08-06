@@ -37,8 +37,8 @@ let student3 = new Student("Ravi", 21, true);
 // this keyword inject inside of the constructor function.
 //  tha's why we can access the properties of the object using 'this' inside the constructor function.
 
- console.log(student2); // This will log undefined because the function does not return anything
-console.log(student3); 
+//  console.log(student2); // This will log undefined because the function does not return anything
+// console.log(student3); 
 console.log(student3.constructor); 
 
 
