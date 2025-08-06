@@ -7,11 +7,11 @@ let student1 = {
 
     Deatils : function(){
         console.log(`Name: ${this.name}, Age: ${this.age}, Active: ${this.isActive}`);
-        //console.log(this);
+        console.log(this);
         
     }
 }
-//console.log(student1);
+console.log(student1);
 
 student1.Deatils();
 
