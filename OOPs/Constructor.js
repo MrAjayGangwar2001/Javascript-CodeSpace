@@ -20,9 +20,13 @@ function user(username, age, email) {
     this.username = username;
     this.age = age;
     this.email = email;
+
+    console.log(`UserName is : ${username}, Age is : ${age}, Email is : ${email}`);
+    
 }
 user("@Jay", 21, "jay@gmail.com");
-console.log(user.prototype);
+// console.log(user.prototype);
+// console.log(user.);
 
 
 user.prototype.fullname = function(surname){
