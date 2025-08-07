@@ -22,6 +22,8 @@ function user(username, age, email) {
     this.email = email;
 }
 user("@Jay", 21, "jay@gmail.com");
+console.log(user.prototype);
+
 
 user.prototype.fullname = function(surname){
     return this.username + ' ' + surname;
