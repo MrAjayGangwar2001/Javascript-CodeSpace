@@ -7,7 +7,7 @@ class Student{
     }
 
     fullname(surname){
-        return this.name + ' ' + surname;
+        return this.name + '_' + surname;
     }
 }
 
