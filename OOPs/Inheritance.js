@@ -43,12 +43,12 @@ Object.setPrototypeOf(Trainer, user); // Yahan Teacher bhi User ki property acce
 
 
 
-let name = "      Ajay         "
+let name = "      Ajay  _ Gangwar         "
 
 String.prototype.TrueLength = function(){
     return this.trim().length
 }
-console.log(name.TrueLength())
+console.log("Actual Length : ", name.TrueLength())
 
 "        Gangwar  ".TrueLength();
 "    Java       Full      Stack    ".TrueLength();
