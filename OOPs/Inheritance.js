@@ -50,5 +50,9 @@ String.prototype.TrueLength = function(){
 }
 console.log("Actual Length : ", name.TrueLength())
 
-"        Gangwar  ".TrueLength();
-"    Java       Full      Stack    ".TrueLength();
+let surname = "        Gangwar  ".TrueLength();
+let course = "    Java       Full      Stack    ".TrueLength();
+
+console.log("Surname Length is : ", surname);
+console.log("Course Length is : ", course);
+
