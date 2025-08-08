@@ -27,10 +27,11 @@ const OfficeSupport = {
 }
 
 Trainer__proto__= user                        // Yahan Teacher bhi User ki property access kar rha hai
-PlacementSupport__proto__ = Trainer
+OfficeSupport__proto__ = PlacementSupport
 
-// console.log(user);
-console.log(Trainer);
+ console.log(user);
+// console.log(PlacementSupport);
+//console.log(Trainer);
 
 
 
