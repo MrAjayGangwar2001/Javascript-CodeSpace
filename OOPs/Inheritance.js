@@ -26,7 +26,10 @@ const OfficeSupport = {
   //  __proto__:PlacementSupport
 }
 
-Trainer__proto__= user                          // Yahan Teacher bhi User ki property access kar rha hai
+Trainer__proto__= user, Trainer                        // Yahan Teacher bhi User ki property access kar rha hai
+
+console.log(user);
+
 
 
 // Modern Way of Inheritance in JavaScript....-.--------- :-)
