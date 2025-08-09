@@ -24,7 +24,10 @@ class Teacher extends User {
 }
 
 let teacher = new Teacher("Ajay", "Ajay@example.com", "123 Main St.");
+let t1 = new Teacher('Visvas', 'kumarvisvas@gmail.com', '342 Filmcity Mumbai');
+
 console.log(teacher);
+console.log(t1);
 teacher.AddCourse();
 teacher.print();
 
