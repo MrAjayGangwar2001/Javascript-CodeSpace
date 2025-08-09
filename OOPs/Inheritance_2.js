@@ -32,4 +32,6 @@ let student = new User("Sanjay")
 let student2 = new User("Vinay")
 let student3 = new User("Rajeev")
 student.print();
+student2.print();
+student3.print();
 
