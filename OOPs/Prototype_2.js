@@ -25,7 +25,7 @@ let user2 = new User('Rahul', 'rah@example.com');
 user.greet();
 user.contact();
 user2.greet();
-// user2.contact();
+user2.contact();
 
 
 
