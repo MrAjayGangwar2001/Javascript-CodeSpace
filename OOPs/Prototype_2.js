@@ -4,8 +4,8 @@ function Multiply(num){
     return num * 8;
 }
 console.log(Multiply(5));
-// Multiply.power = 3
-// console.log(Multiply.power);
+Multiply.power = 3
+console.log(Multiply.power);
 // console.log(Multiply.prototype);
 
 
