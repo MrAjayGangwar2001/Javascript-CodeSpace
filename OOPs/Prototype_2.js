@@ -4,9 +4,9 @@ function Multiply(num){
     return num * 8;
 }
 console.log(Multiply(5));
-Multiply.power = 3
-console.log(Multiply.power);
-console.log(Multiply.prototype);
+// Multiply.power = 3
+// console.log(Multiply.power);
+// console.log(Multiply.prototype);
 
 
 function User(username, email) {
@@ -23,9 +23,9 @@ User.prototype.contact = function(){
 let user = new User('Ajay', 'aj@example.com');
 let user2 = new User('Rahul', 'rah@example.com');
 user.greet();
-user.contact();
-user2.greet();
-user2.contact();
+// user.contact();
+// user2.greet();
+// user2.contact();
 
 
 
