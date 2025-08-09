@@ -23,7 +23,7 @@ User.prototype.contact = function(){
 let user = new User('Ajay', 'aj@example.com');
 let user2 = new User('Rahul', 'rah@example.com');
 user.greet();
-// user.contact();
+user.contact();
 // user2.greet();
 // user2.contact();
 
