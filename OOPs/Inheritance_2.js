@@ -28,6 +28,6 @@ console.log(teacher);
 teacher.AddCourse();
 teacher.print();
 
-// let student = new User("vivek")
+let student = new User("Sanjay")
 // student.print();
 
