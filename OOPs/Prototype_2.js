@@ -6,7 +6,7 @@ function Multiply(num){
 console.log(Multiply(5));
 Multiply.power = 3
 console.log(Multiply.power);
-// console.log(Multiply.prototype);
+console.log(Multiply.prototype);
 
 
 function User(username, email) {
