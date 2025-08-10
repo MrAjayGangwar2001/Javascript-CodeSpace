@@ -12,7 +12,10 @@ console.log(Multiply.prototype);
 function User(username, email) {
     this.username = username;
     this.email = email;
+    return `${this.username} and ${this.email}`;
 }
+console.log(User('aj', 'aj121@gmail.com'));
+
 
 User.prototype.greet = function() {
     console.log(`Hello, I'm ${this.username}!`);
