@@ -4,8 +4,8 @@ let user = "      Rohan      ";
 // String.prototype.TrueLength = function(){
 //     return this.trim().length;
 // }
-console.log(user.TrueLength())
- console.log(Name.TrueLength());
+// console.log(user.TrueLength())
+//  console.log(Name.TrueLength());
 
 console.log(Name.trim().length);
 console.log(user.trim().length);
