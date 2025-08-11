@@ -1,14 +1,14 @@
 let Name = "      Ajay      ";
 let user = "      Rohan      ";
 
-// String.prototype.TrueLength = function(){
-//     return this.trim().length;
-// }
-// console.log(user.TrueLength())
-//  console.log(Name.TrueLength());
+String.prototype.TrueLength = function(){
+    return this.trim().length;
+}
+console.log(Name.TrueLength());
+console.log(user.TrueLength())
 
-console.log(Name.trim().length);
-console.log(user.trim().length);
+// console.log(Name.trim().length);
+// console.log(user.trim().length);
 
 
 let Actor = ["Akshay", "Sunil", "Paresh"];
