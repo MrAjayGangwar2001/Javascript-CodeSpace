@@ -19,11 +19,14 @@ let ActorMovie = {
     "Paresh" : "Golmaal",
 
     ActorMixMovie : function(){
-        console.log(`Thes all three Actor Movie is ${this.paresh}`);
+        console.log(`These all three Actor Movie is ${this.paresh}`);
         
     }
 }
+console.log(ActorMovie.Paresh);
+console.log(ActorMovie.ActorMixMovie);
 
-// Object.prototype.Ajay = function () {                      // It is Injecting Ajay FunctionUnder the Objects
+
+// Object.prototype.Ajay = function () {                      // It is Injecting Ajay Function Under the Objects
 //         console.log("Hello ! I am Ajay Under The Prototype of Object");
 // }
