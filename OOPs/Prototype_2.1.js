@@ -1,9 +1,9 @@
 let Name = "      Ajay      ";
 let user = "      Rohan      ";
 
-String.prototype.TrueLength = function(){
-    return this.trim().length;
-}
+// String.prototype.TrueLength = function(){
+//     return this.trim().length;
+// }
 console.log(user.TrueLength())
  console.log(Name.TrueLength());
 
@@ -24,6 +24,6 @@ let ActorMovie = {
     }
 }
 
-Object.prototype.Ajay = function () {                      // It is Injecting Ajay FunctionUnder the Objects
-        console.log("Hello ! I am Ajay Under The Prototype of Object");
-}
+// Object.prototype.Ajay = function () {                      // It is Injecting Ajay FunctionUnder the Objects
+//         console.log("Hello ! I am Ajay Under The Prototype of Object");
+// }
