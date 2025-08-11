@@ -29,5 +29,3 @@ console.log(ActorMovie.Sunil);
 Object.prototype.Ajay = function () {                      // It is Injecting Ajay Function Under the Objects
         console.log("Hello ! I am Ajay Under The Prototype of Object");
 }
-
-console.log(Object.Ajay);
