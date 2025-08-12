@@ -95,6 +95,8 @@ consumepromiseFive();
 // }
 // GetGithubUser();
 
+
+// then - catch Method are Here...
 fetch('https://api.github.com/users/MrAjayGangwar2001')
 .then((response) => {
   
