@@ -34,7 +34,7 @@ let owner = new Client("John ","john@gmail.com");
 
 console.log(owner);
 
-// console.log(owner.CID())
+console.log(owner.CID())
 owner.loged()
 
 
