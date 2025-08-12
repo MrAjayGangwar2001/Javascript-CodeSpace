@@ -81,6 +81,7 @@ async function consumepromiseFive() {
 }
 consumepromiseFive();
 
+// async and await Method is used.........
 // async function GetGithubUser() {
 //   try {
 //     let response = await fetch(
