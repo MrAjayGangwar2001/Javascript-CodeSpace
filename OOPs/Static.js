@@ -1,3 +1,5 @@
+// In this file we Will Learn Static Method in Javascript
+
 // static Method can't be used in another class also can not call in other place 
 // static method is used to call in same class only.
 // static method prevents from creating object of class.
