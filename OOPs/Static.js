@@ -21,7 +21,7 @@ class Customer{
 }
 let check = new Customer("John ");
 check.loged();
-//check.CID()
+check.CID()
 
 class Client extends Customer{
     constructor(name, email){
