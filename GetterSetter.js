@@ -27,9 +27,9 @@ const user = new User('John Jackob', 'john.jack@example.com');
 console.log(user);
 console.log(user.mail);
 user.mail = 'ajay1223.com';
-console.log("Updated USer Mail",user.mail);
+console.log("Updated USer Mail : ",user.mail);
 console.log(user.name);
 user.name = 'Ajay';
-console.log("Updated User Name", user.name);
+console.log("Updated User Name : ", user.name);
 
 
