@@ -24,11 +24,12 @@ class User{
 }
 
 const user = new User('John Jackob', 'john.jack@example.com');
+console.log(user);
 console.log(user.mail);
-user.mail = 'ajay1223.com';
-console.log(user.mail);
-console.log(user.name);
-user.name = 'Ajay';
-console.log(user.name);
+// user.mail = 'ajay1223.com';
+// console.log(user.mail);
+// console.log(user.name);
+// user.name = 'Ajay';
+// console.log(user.name);
 
 
