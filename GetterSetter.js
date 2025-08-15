@@ -23,7 +23,7 @@ class User{
 
 }
 
-const user = new User('John Doe', 'john.doe@example.com');
+const user = new User('John Jackob', 'john.jack@example.com');
 console.log(user.mail);
 user.mail = 'ajay1223.com';
 console.log(user.mail);
