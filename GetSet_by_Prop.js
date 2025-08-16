@@ -26,5 +26,6 @@ console.log(user.Name);
 user.Email = 'NewEmail@example.com';
 user.Name  = "Vijay Malya";
 console.log(user.Email);
+console.log(user.Name);
 
 
