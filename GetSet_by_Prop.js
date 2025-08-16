@@ -20,6 +20,6 @@ function User(Name, Email){
         }
     })
 }
-var user = new User('John', 'john@example.com');
+var user = new User('Ajay', 'Pirate@example.com');
 console.log(user.Email);
 console.log(user.Name);
