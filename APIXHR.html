@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API Request using XHR</title>
+</head>
+<body style="background-color: darkslategray; color:aliceblue">
+    <h2>API XML HTTPS Request</h2>
+    <h3>XML HTTPS Request is a Old Method</h3>
+    <div class="card">
+        <img src="" id="img" width="300" alt="API"/>
+        <div class="repositiry">
+            UserName : <span id="name"></span>
+            UserName : <span id="login"></span>
+            Repositery : <span id="repo"></span>
+        </div>
+    </div>
+
+</body>
+<script>
+    // Create a new XMLHttpRequest object
+  // let URL =  "https://avatars.githubusercontent.com/u/149433023?v=4";          // Avtar/Profile Image
+    let url = 'https://api.github.com/users/MrAjayGangwar2001';
+    let xhr = new XMLHttpRequest();
+    xhr.open('GET', url, true);
+   // xhr.open('GET', URL, true);
+    xhr.onreadystatechange = function(){
+        console.log(xhr.readyState);
+        if(xhr.readyState == 4){
+            console.log(this.responseText)
+            //let data = this.responseText;
+            // console.log(typeof data);          // string so we have to convert into object
+            let data = JSON.parse(this.responseText);
+            console.log(typeof data);                // object
+            console.log(data.followers)
+            
+            // To Get Image of github User
+            let Image = document.querySelector('#img');
+            Image.src = data.avatar_url;
+            // TO GET NAME OF GITHUB USER
+            let Name = document.querySelector('#name');
+            Name.innerHTML = `${data.name} <br>`;
+            // TO GET Login(USER_NAME) of github User
+            let Uname = document.querySelector('#login');
+            Uname.innerHTML = `${data.login} <br>`;
+
+            // To Get Repository of github User
+            let Repo = document.querySelector('#repo');
+           Repo.innerHTML = `${data.public_repos}`;
+        }
+    }
+    xhr.send();
+    
+    
+     //  let Image = document.querySelector('#img');
+     // Image.src = "https://avatars.githubusercontent.com/u/149433023?v=4";
+</script>
+</html>

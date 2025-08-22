@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Projects</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0px;
+            padding: 0px;
+            background-color: darkslategray;
+            color: aliceblue;
+            align-items: center;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h2>DOM Manipulation Console Printing Project </h2>
+    <button id="btn">Start</button>
+    <button id="btnn">Stop</button>
+    <div class="consoleText">
+        <ol class="ulist">
+        </ol>
+    </div>
+
+</body>
+<script>
+    let Start = document.getElementById("btn");
+    let Stop = document.getElementById("btnn");
+    let consoleText = document.querySelector(".ulist");
+    let interval;
+    function Print(str) {
+       // consoleText.innerHTML += "\item " + str + ""+ Date.now();
+        let li = document.createElement("li");
+        li.textContent = str + " " + new Date().toLocaleString();
+        consoleText.appendChild(li);
+       // console.log(str, Date.now())
+    }
+    function start(){
+        if(!interval){
+            interval = setInterval(Print, 1000, "Hi")
+        }
+        
+    }
+    function stop(){
+        clearInterval(interval);
+        interval = null;
+    }
+    Start.addEventListener('click',start)
+    Stop.addEventListener('click',stop)
+</script>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Closure in Javascript</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: x-large;
+            background-color: darkslategray;
+            color: aliceblue;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Click to Any Color Name Button to change the background color</h1>
+    <button id="btn1">Red</button>
+    <button id="btn2">Green</button>
+</body>
+
+<script>
+    // Closure in JS
+
+    function outer() {
+        let name = " I am outer Function";
+
+        function inner() {
+            console.log(name);
+        }
+        return inner;
+    }
+    const fun = outer();
+    fun();
+
+    function clickHandle(color) {
+        // document.body.style.backgroundColor = `${color}`;           // It Apply direct without click
+
+        return function changeColor() {
+            document.body.style.backgroundColor = `${color}`;
+
+        }
+    }
+    document.getElementById("btn1").addEventListener("click", clickHandle("red"));
+    document.getElementById("btn2").addEventListener("click", clickHandle("green"));
+</script>
+
+</html>

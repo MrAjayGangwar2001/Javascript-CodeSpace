@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Sync-Async Event Demo</title>
+</head>
+<body style="background-color: darkslategrey; color:aliceblue">
+    <h2>Event Synchronous And Asynchronous</h2>
+    <p id="para">This Text will be Change in Next 5 sec. To stop Click the Stop Button. </p>
+    <button type="button" id="stop">Stop</button>
+    <script>
+        let name = () =>{
+            console.log("Hi, My Name is Ajay")
+            console.log("This is Set Time Out Method")
+        };
+        setTimeout( name, 2000);
+    
+        let btntext = () => {
+            let para = document.querySelector('p');
+            para.innerHTML = "The Text has been Changed.You Should Stop When the program Run.";
+            para.style.color = "yellow"
+            
+        }
+    
+        //console.log(btntext);
+        let stop = setTimeout(btntext, 5000);
+        
+    
+        document.querySelector('#stop').addEventListener('click', (e)=>{
+            clearTimeout(stop);
+          //  console.log("Stopped");
+        } )
+    </script>
+</body>
+</html>

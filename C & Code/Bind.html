@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bind Keyword</title>
+</head>
+
+<body>
+    <h2> We will learn Bind Keyword in Javascript</h2>
+
+    <button type="button">Clicked</button>
+
+    <script>
+
+        class BindKeyword {
+
+            constructor() {
+
+                this.library = "React"
+                this.server = "http://localhost/3000"
+
+
+                document
+                    .querySelector('button')
+                    .addEventListener('click', this.handleclick.bind(this));      // This is the Old Methodology
+
+            }
+
+            handleclick() {
+                console.log("Button Clicked");
+                console.log("this is 1 ", this.library);
+                console.log("this is 2 ", this.server);
+                console.log("this is 3 ", this);
+                console.log("this is 4 ", this === bind);
+                console.log("this is 5 ", this instanceof BindKeyword);
+                console.log("this is 6 ", this.constructor.name);
+                // console.log("this is 7 ", this.constructor === BindKeyword);
+                // console.log("this is 8 ", this.constructor === Object);
+                // console.log("this is 9 ", this.constructor === Function);
+                // console.log("this is 10 ", this.constructor === Array);
+                // console.log("this is 11 ", this.constructor === String);
+                // console.log("this is 12 ", this.constructor === Number);
+                // console.log("this is 13 ", this.constructor === Boolean);
+                // console.log("this is 14 ", this.constructor === Date);
+                // console.log("this is 15 ", this.constructor === RegExp);
+                // console.log("this is 16 ", this.constructor === Error);
+                // console.log("this is 17 ", this.constructor === Symbol);
+                // console.log("this is 18 ", this.constructor === Map);
+                // console.log("this is 19 ", this.constructor === Set);
+                // console.log("this is 20 ", this.constructor === WeakMap);
+                // console.log("this is 21 ", this.constructor === WeakSet);
+                // console.log("this is 22 ", this.constructor === Promise);
+                // console.log("this is 23 ", this.constructor === Proxy);
+                // console.log("this is 24 ", this.constructor === Reflect);
+                // console.log("this is 25 ", this.constructor === Intl);
+                // console.log("this is 26 ", this.constructor === JSON);
+                // console.log("this is 27 ", this.constructor === Math);
+                // console.log("this is 28 ", this.constructor === Function.prototype);
+                // console.log("this is 29 ", this.constructor === Object.prototype);
+                // console.log("this is 30 ", this.constructor === Array.prototype);
+                // console.log("this is 31 ", this.constructor === String.prototype);
+                // console.log("this is 32 ", this.constructor === Number.prototype);
+                // console.log("this is 33 ", this.constructor === Boolean.prototype);
+                // console.log("this is 34 ", this.constructor === Date.prototype);
+                // console.log("this is 35 ", this.constructor === RegExp.prototype);
+                // console.log("this is 36 ", this.constructor === Error.prototype);
+                // console.log("this is 37 ", this.constructor === Symbol.prototype);
+                // console.log("this is 38 ", this.constructor === Map.prototype);
+                // console.log("this is 39 ", this.constructor === Set.prototype);
+                console.log("this is 40 ", typeof constructor);
+                console.log("this is 41 ", typeof this.constructor);
+            }
+
+        }
+
+
+        let bind = new BindKeyword();
+
+    </script>
+</body>
+
+</html>
